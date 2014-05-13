@@ -117,29 +117,8 @@ class DataService extends MyBaseClass{
 		return ($res=="")?array("result"=>"fail", "message"=>"no record found") : array("records"=>$res); 
 
 	}
-	
-/*
-	function getDetail($id=0){
-		if($id==0){ return array("action"=>$this->getRequestAction(),"msg"=> "getDetail: id missing: $id" ); }
-		
-			$sql ="select * from ". TABLE1 ." WHERE work_id = ".mysql_real_escape_string($id) ;
-			$sql2 ="select * from ". TABLE1 ." WHERE isHidden !=1 and parent = ".mysql_real_escape_string($id) ;
-			//print $sql; 
-			
-			$res = db_query("", $sql);
-			$res2 = db_query("", $sql2);
 
-		return array("action"=>$this->getRequestAction(),
-			"msg"=> "getDetail: $id", 
-			"data"=>array("result"=>resourceToArray($res),
-			"children"=>resourceToArray($res2))  ); ;
-	}*/
 
-	function getContent($name){
-		return;
-	}
-	
-	 
 	
 } 
 ?>

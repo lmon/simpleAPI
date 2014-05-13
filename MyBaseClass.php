@@ -4,13 +4,8 @@
 class MyBaseClass{
 	
 	public function __set($name, $value)
-    {
-        //echo "Setting '$name' to '$value'\n";
+    { 
         $this->$name = $value;
-    }
-
-    public function loadActions($filename){
-        return json_decode( file_get_contents($filename),'assoc' ) ;
     }
 
     public function __get($name)
@@ -27,6 +22,10 @@ class MyBaseClass{
 	            ' on line ' . $trace[0]['line'], E_USER_NOTICE);
 	     */
         return null;
+    }
+
+    public function loadActions($filename){
+        return json_decode( file_get_contents($filename),'assoc' ) ;
     }
 
     /**  As of PHP 5.1.0  */

@@ -67,7 +67,11 @@
 			$file_ext=end($file_ext);  
 			return strtolower(end(explode('.',$filename)));  
 		}
+/*
 
+ NEED TO ADD VALIDATION
+
+*/
 		private function validate(){ 
 	      		return true;			
 			for($i=0; $i < count($_FILES['file']['tmp_name']);$i++) {

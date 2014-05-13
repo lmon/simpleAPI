@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 $DB = "puzzle";
 define("TABLE1", "person");

@@ -1,6 +1,6 @@
 <?php
 
-//DBHandlerClass.php
+//DBHandler.php
 class DBHandler {
 	private $DBHOST ;
 	private $DBUSER ;
@@ -78,37 +78,5 @@ class DBHandler {
    	return;
    }	
   }
-  
-  /*
-
-  function show_tables()
-  {	
-    $conn = $this->db_connect();
-    $sql = "SHOW TABLES from mainDB" ;
-    $result = mysql_query($sql, $conn);
-   	return  $result  ;
-  }
-
-  function db_query($tbl, $query)
-  {
-    $conn = $this->db_connect();
-    $x = mysql_select_db($this->DB) or die ('I cannot select to the database because: ' . mysql_error());
-    $result = mysql_query($query, $conn);
-
-    if (!$result)
-      return(0);
-
-    return $result ;
-   }
-   
-   function resourceToArray($resource){
-  		$ret = array();
-  		if($resource){
-  			while($line = mysql_fetch_assoc($resource)){ $ret[] = $line;	}
-  		} else{
-  			echo "error " .mysql_error();
-  		} 
-  		return $ret;
-  	}*/
 
 }

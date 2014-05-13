@@ -13,11 +13,11 @@ Support the Puzzle application by providing a touchpoint for image upload and UI
 
 ## Functional Requirements
 Use HTACCESS file to handle requests
-[.] Handle valid requests to upload images
-[.]	Respond with success/failure
+[X] Handle valid requests to upload images
+[X]	Respond with success/failure
 [.]	Respond with proper UID
-[.] Handle valid requests for list of IDs
-[.]	Respond with list of UID 
+[X] Handle valid requests for list of IDs
+[X]	Respond with list of UID 
 Rename images appropriately and store on server
 Save data to DB and ensure uniqueness, validity, security
 

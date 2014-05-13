@@ -1,5 +1,4 @@
 {
-	
 "uploadr":{ 
 "POST":"doUpload", "GET":"doUploadForm"
 },
