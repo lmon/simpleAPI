@@ -1,0 +1,24 @@
+<html>
+<body>
+
+	<form action="/MonacoWork/php/puzzle/uploadr/" method="post"
+	enctype="multipart/form-data">
+
+		<label for="firstname">First:</label>
+
+		<input type="text" name="firstname" id="firstname"><br>
+
+		<label for="lastname">Last:</label>
+		<input type="text" name="lastname" id="lastname"><br>
+
+
+		<label for="file">Files:</label><br>
+		1 <input type="file" name="file[]" id="file_raw"><br>
+		2 <input type="file" name="file[]" id="filep1"><br>
+		3 <input type="file" name="file[]" id="filep2"><br>
+
+		<input type="submit" name="submit" value="Submit">
+	</form>
+
+</body>
+</html>
