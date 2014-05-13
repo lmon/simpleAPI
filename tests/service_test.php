@@ -1,7 +1,7 @@
 <?php
 require_once('/Library/WebServer/Documents/MonacoWork/simpletest/autorun.php');
 require_once('/Library/WebServer/Documents/MonacoWork/simpletest//web_tester.php');
-require_once(dirname(__FILE__) . '/puzzleService.php');
+require_once(dirname(__FILE__) . '/simpleAPI.php');
 
 class TestOfPuzzle extends WebTestCase {
     public $SITE = "http://localhost/MonacoWork/php/puzzle/index.php";

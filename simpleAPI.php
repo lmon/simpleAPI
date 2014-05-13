@@ -5,7 +5,7 @@
 	require_once "DataService.php";
 	require_once "ViewController.php";
 
-class puzzleService{
+class simpleAPI{
 	private $ROUTER;
 	private $DATASERVICE;
 	private $VIEW;

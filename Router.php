@@ -4,31 +4,14 @@
 	 class Router extends MyBaseClass{
 	 	private $PARENT;
 	 	private $COMMAND = "request";
-	 	private $ACTIONS = array(
-	 		"uploadr"=>array(
-	 			"POST"=>"doUpload",
-	 			"GET"=>"doUploadForm"
-	 		),
-			"items"=>array(
-				"GET"=>"getAll", 
-				"POST"=>"XOXO"
-				),
-	 		"item"=>array(
-	 			"POST"=>"NONO",
-	 			"GET"=>"getDetail"
-	 			),
-	 		"test"=>array(
-	 			"POST"=>"ZOZO",
-	 			"GET"=>"YOYO"
-	 			),
-	 		"default"=>array(
-	 			"POST"=>"ZOZO",
-	 			"GET"=>"getIndex"
-	 			),
-	 	);
+	 	private $ACTIONS ;
 
  		function __construct($parent){
  			$this->PARENT = $parent;
+ 			$this->ACTIONS = $this->loadActions('actions.json');
+
+ 			//print $this->ACTIONS;
+ 			//exit;
 		}
 
 		public function handleRequest(){

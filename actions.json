@@ -1,0 +1,20 @@
+{
+	
+"uploadr":{ 
+"POST":"doUpload", "GET":"doUploadForm"
+},
+"items":{
+"GET":"getAll",  "POST":"XOXO"
+},
+"item":{
+"POST":"NONO", "GET":"getDetail"
+},
+"test":{
+"POST":"ZOZO", "GET":"YOYO"
+},
+"default":{
+"POST":"ZOZO", "GET":"getIndex"
+} 
+
+}
+ 

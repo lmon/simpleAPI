@@ -9,6 +9,10 @@ class MyBaseClass{
         $this->$name = $value;
     }
 
+    public function loadActions($filename){
+        return json_decode( file_get_contents($filename),'assoc' ) ;
+    }
+
     public function __get($name)
     {
         echo "Getting '$name'\n";
